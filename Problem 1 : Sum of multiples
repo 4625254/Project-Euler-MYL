@@ -1,0 +1,12 @@
+def sum_multiples(x,y):
+    s = 0
+    n = 0
+    while n < 1000:
+        if n % x == 0 or n % y == 0:
+            s += n
+        n += 1
+
+    return s
+
+print(sum_multiples(3,5))
+        
