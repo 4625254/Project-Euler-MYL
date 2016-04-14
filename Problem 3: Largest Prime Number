@@ -1,0 +1,11 @@
+def largest_prime_factor(x):
+    n = 2
+    y = x
+    while n < y and x >= n :
+        if x % n == 0:
+            x //= n
+        n += 1
+
+    return n - 1
+
+print(largest_prime_factor(600851475143))
